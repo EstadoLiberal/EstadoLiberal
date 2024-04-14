@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/siteEL/css/style.css">
+    <link rel="stylesheet" href="/siteEL/js/js.js">
+    <!--GOOGLE FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FIM GOOGLE FONTES-->
+    <!--BOOTstrap ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- FIM BOOTstrap ICONS-->
+    <link rel="icon" href="https://media.discordapp.net/attachments/773240632687722567/1229162312800407593/logooficial-fotor-bg-remover-2024041416130.png?ex=662ead9c&is=661c389c&hm=a1ba65d4adfbe725de14fe121d27626fcb2b401e3353802d216ddbf84b2a8c53&=&format=webp&quality=lossless&width=468&height=468" type="image/png">
+
+    <title>Estado Liberal</title>
+
+    <style>
+        /* Estilos padrão */
+
+        .interface {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        h2.titulo {
+            margin: 0 0 15px 0;
+            color: rgb(0, 0, 0);
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .ultima {
+            margin-top: 20px;
+        }
+
+        /*cabeçalho*/
+
+        .logo {
+            width: 25%;
+            height: auto;
+        }
+
+        header {
+            padding: 0% 4px;
+        }
+
+        header>.interface {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin-left: 300px;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        header a:hover {
+            color: rgb(107, 105, 105);
+            transform: scale(1.05);
+        }
+
+        header a {
+            color: #000000;
+            text-decoration: none;
+            display: inline-block;
+            transition: .2s;
+        }
+
+        /* ESTILO DO TOPO DO SITE*/
+
+        section.topo-do-site {
+            padding: 30px 4%;
+        }
+
+        section.topo-do-site .flex {
+            align-items: center;
+            justify-content: center;
+            gap: 90px;
+        }
+
+        .topo-do-site h1 {
+            color: rgb(0, 0, 0);
+            font-size: 38px;
+            line-height: 35px;
+        }
+
+        .topo-do-site .txt-topo-site p {
+            color: rgb(0, 0, 0);
+            margin: 40px 0px;
+            font-size: 18px;
+        }
+
+        .topo-do-site .img-topo-site {
+            width: 50%;
+        }
+
+        /*ESTILO DAS ESPECIALIDADES*/
+
+        .seção-de-destaques {
+            padding: 30px 4%;
+            margin-top: 126px;
+        }
+
+        .seção-de-destaques .flex {
+            gap: 50px;
+            display: flex;
+            justify-content: space-around;
+            /* Alinha os boxes horizontalmente */
+        }
+
+        .seção-de-destaques .destaques-box {
+            color: rgb(0, 0, 0);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid rgb(0, 0, 0);
+            transition: .2s;
+            width: calc(33.33% - 50px);
+            /* Define a largura de cada box */
+            margin: 0 auto;
+            /* Adiciona margem automática para centralizar */
+        }
+
+        .seção-de-destaques .destaques-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgb(255, 251, 0);
+        }
+
+        .seção-de-destaques .destaques-box i {
+            font-size: 60px;
+            color: rgb(54, 54, 54);
+        }
+
+        .seção-de-destaques .destaques-box h3 {
+            font-size: 28px;
+            margin: 15px 0;
+        }
+
+        .seção-de-destaques .destaques-box p {
+            font-size: 18px;
+            margin: 0;
+            /* Removendo margens para eliminar as lacunas entre as frases */
+            text-align: left;
+            /* Alinhando o texto à esquerda */
+            overflow-wrap: break-word;
+            /* Permite que as palavras sejam quebradas em várias linhas */
+            word-wrap: break-word;
+            /* Fallback para navegadores mais antigos */
+        }
+
+
+
+        /*ultima parte*/
+
+        section.ultima {
+            padding: 40px 4%;
+            margin-top: 100px;
+        }
+
+        section.ultima .flex {
+            align-items: center;
+            justify-content: center;
+            gap: 90px;
+        }
+
+        .ultima h1 {
+            color: rgb(0, 0, 0);
+            font-size: 38px;
+            line-height: 35px;
+        }
+
+        .ultima .txt-ultima p {
+            color: rgb(0, 0, 0);
+            margin: 40px 0px;
+        }
+
+        .ultima .img-ultima {
+            width: 50%;
+        }
+
+        /* Media queries para telas menores */
+
+        @media screen and (max-width: 768px) {
+            .logo {
+                width: 50%;
+                /* Ajusta o tamanho da logo para telas menores */
+            }
+
+            header nav ul li {
+                padding: 0 15px;
+                /* Reduz o espaçamento dos itens do menu para telas menores */
+            }
+
+            .topo-do-site .flex {
+                flex-direction: column;
+                /* Altera a direção da flexbox para coluna em telas menores */
+                gap: 20px;
+                /* Ajusta o espaçamento entre os elementos para telas menores */
+            }
+
+            .topo-do-site .img-topo-site {
+                width: 100%;
+                /* Ajusta a largura da imagem para ocupar toda a largura disponível */
+            }
+
+            .seção-de-destaques .flex,
+            .ultima .flex {
+                flex-direction: column;
+                /* Altera a direção da flexbox para coluna em telas menores */
+                gap: 20px;
+                /* Ajusta o espaçamento entre os elementos para telas menores */
+            }
+
+            .seção-de-destaques .destaques-box,
+            .ultima .img-ultima {
+                width: 100%;
+                /* Ajusta a largura dos elementos para ocupar toda a largura disponível */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <header>
+            <div class="interface">
+                <div class="logo">
+                    <a href="#">
+                        <img src="https://media.discordapp.net/attachments/773240632687722567/1229162312800407593/logooficial-fotor-bg-remover-2024041416130.png?ex=662ead9c&is=661c389c&hm=a1ba65d4adfbe725de14fe121d27626fcb2b401e3353802d216ddbf84b2a8c53&=&format=webp&quality=lossless&width=468&height=468" alt="logo do estado liberal" class="logo">
+                        <!--imagem da logo-->
+                    </a>
+                    <!--quando aperto na logo vai pro inicio-->
+                </div>
+                <!--logo, imagem lá-->
+
+                <nav class="menu-desktop">
+                    <!--tag responsiva -->
+                    <ul>
+                        <li><a href="#sobre-nos">Sobre nós</a></li>
+                        <li><a href="#Seção">Seção destaques</a></li>
+                        <li><a href="#Motivação">Motivação da criação</a></li>
+                        <li><a href="https://discord.gg/TXdRUZ4BcU">Discord<a></li>
+                    </ul>
+                    <!-- listas não ordenadas -->
+                </nav>
+            </div>
+            <!--interface, menu praticamente-->
+        </header>
+    </header>
+
+    <main>
+        <section id="sobre-nos" class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Quem somos nos?</h1>
+                        <p>Somos uma organização política dedicada a educar jovens e adolescentes sobre os princípios do liberalismo e proporcionar um espaço de debate e aprendizado sobre questões políticas e sociais. Em um mundo onde a compreensão da política é fundamental, mas muitas vezes negligenciada, estamos aqui para preencher essa lacuna e capacitar a próxima geração de cidadãos informados e engajados.</p>
+                        <p>Através de uma variedade de iniciativas, como debates, chamadas virtuais, análises de notícias e grupos de estudos, buscamos fornecer uma plataforma onde os participantes possam explorar diferentes perspectivas e desenvolver habilidades críticas de pensamento. Nosso foco principal é promover os valores do liberalismo clássico, como liberdade individual, livre mercado e Estado limitado, enquanto incentivamos o respeito mútuo e a diversidade de opiniões.</p>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="https://media.discordapp.net/attachments/773240632687722567/1229162312573653112/amarelo-fotor-bg-remover-2024041416151.png?ex=662ead9c&is=661c389c&hm=3d6b0e4201bdb94fd39f2845eaffd0eda669a323879d5d2d06ca8accb511417b&=&format=webp&quality=lossless&width=468&height=468" alt="logo amarela">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Seção" class="seção-de-destaques">
+            <div class="interface">
+                <h2 class="titulo">Seção de destaques</h2>
+                <div class="flex">
+                    <div class="destaques-box">
+                        <a href="https://discord.gg/5tvhaqsXCZ" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-bank"></i>
+                            <h3>Academia Estado Liberal</h3>
+                            <p>A Academia Estado Liberal é o coração do nosso compromisso com a educação política e intelectual. Este é o lugar onde mentes curiosas se encontram para explorar os princípios do liberalismo clássico, mergulhando em debates estimulantes, análises aprofundadas e leituras fundamentais.</p>
+                        </a>
+                    </div>
+
+                    <div class="destaques-box">
+                        <a href="https://forms.gle/wUa3abzfbnVyRDzw9" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-ui-checks"></i>
+                            <h3>Formulario</h3>
+                            <p>Você tem paixão por política e deseja contribuir para a promoção dos valores do liberalismo? Junte-se a nós! O Formulário de Recrutamento do Estado Liberal é sua porta de entrada para se envolver mais ativamente em nossa instituição. Seja como administrador, moderador ou voluntário, queremos ouvir você!</p>
+                        </a>
+                    </div>
+
+                    <div class="destaques-box">
+                        <a href="https://discord.gg/TXdRUZ4BcU" style="text-decoration: none; color: inherit;">
+                            <i class="bi bi-discord"></i>
+                            <h3>Discord</h3>
+                            <p>O Grupo do Discord do Estado Liberal é o ponto de encontro virtual da nossa comunidade, onde membros podem se conectar, compartilhar ideias e participar de discussões significativas sobre política, economia e sociedade. Aqui, você encontrará uma Biblioteca Virtual com uma seleção de PDFs de livros clássicos e contemporâneos sobre política, economia e filosofia, permitindo que você expanda seus horizontes intelectuais e aprofunde seu entendimento sobre os princípios do liberalismo.</p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="Motivação" class="ultima">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-ultima">
+                        <img src="https://media.discordapp.net/attachments/773240632687722567/1229162311785124020/75834a31ad719831b8bb035c05edbf1e-fotor-bg-remover-2024041416107.png?ex=662ead9b&is=661c389b&hm=3607013b26b7fe9fa5220caa063753dc9c0429dd00b09feea086bec8758b231a&=&format=webp&quality=lossless&width=468&height=468" alt="logo amarela">
+                    </div>
+                    <div class="txt-ultima">
+                        <h1>Por que criamos o Estado Liberal?</h1>
+                        <p>Nós do Estado Liberal acreditamos que o conhecimento político é essencial para o empoderamento cívico e o desenvolvimento de uma sociedade livre e justa. Observamos uma lacuna na educação política, especialmente entre os jovens e adolescentes, e decidimos agir. Criamos o Estado Liberal como um espaço dedicado a ensinar os princípios do liberalismo e promover o debate saudável sobre questões políticas, econômicas e sociais.</p>
+                        <p>Nosso objetivo é fornecer recursos educacionais acessíveis e oportunidades de engajamento para aqueles que desejam entender melhor o mundo ao seu redor e se tornarem cidadãos informados e ativos. Acreditamos no poder da educação para capacitar as pessoas a fazerem escolhas informadas e contribuírem positivamente para a sociedade.</p>
+                        <p>Criamos o Estado Liberal com o propósito de promover e defender nossos valores fundamentais:</p>
+                        <ul>
+                            <li>Verdade: Acreditamos na importância da honestidade, transparência e integridade em todas as nossas ações e interações.</li>
+                            <li>Liberdade: Defendemos o direito de cada indivíduo de viver livremente, fazer suas próprias escolhas e expressar suas opiniões sem medo.</li>
+                            <li>União: Valorizamos a força que vem da união, do trabalho em equipe e da solidariedade entre os membros do nosso grupo.</li>
+                            <li>Diplomacia: Nos esforçamos para resolver conflitos e diferenças de opinião de maneira pacífica e respeitosa.</li>
+                            <li>Justiça: Buscamos a justiça em todas as nossas ações, garantindo que todos sejam tratados de maneira justa e equitativa.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
